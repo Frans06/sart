@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SART Survreillance</title>
+  <link rel="stylesheet" href="script/jquery-ui.css">
+  <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+  <style>
+      html, body{
+          height: 95%;
+          background-image: url("script/images/2914.jpg");
+          background-size: cover;
+      }
+  #draggable {
+      width: auto;
+      height: 40px;
+      padding: 1px;
+      }
+  #lefttable {
+      width: 250px;
+      height: 100%;
+      border: 3px solid darkgrey;
+      padding: 3px;
+      border-radius: 3px;
+      background:rgba(255,255,255,0.1);
+     }
+      .Headers {
+          text-align: center;
+          color: whitesmoke;
+      }
+  </style>
+    <script src="script/external/jquery/jquery.js"></script>
+    <script src="script/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+</head>
+<body>
+<h2 class="Headers">SART Survillance</h2>
+<div id="lefttable" >
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Sensores detectados</a></li>
+            <li><a href="#tabs-2">Configuracion del site</a></li>
+            <li><a href="#tabs-3">Avanzado</a></li>
+        </ul>
+        <div id="tabs-1">
+            <div id="draggable" class="ui-widget-content">
+            Drag me around
+            </div>
+        </div>
+        <div id="tabs-2">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</div>
+        <div id="tabs-3">Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</div>
+    </div>
+</div>
+
+</body>
+</html>
